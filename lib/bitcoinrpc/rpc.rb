@@ -1,6 +1,6 @@
 require 'rest_client'
 
-class Bitcoin::RPC
+class Bitcoinrpc::RPC
   def initialize(options)
     @user, @pass = options[:user], options[:pass]
     @host, @port = options[:host], options[:port]

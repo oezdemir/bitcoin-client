@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "bitcoin/version"
+require "bitcoinrpc/version"
 
 Gem::Specification.new do |s|
   s.licenses    = [ 'MIT' ]
   s.name        = "bitcoin-client"
-  s.version     = Bitcoin::VERSION
+  s.version     = Bitcoinrpc::VERSION
   s.authors     = ["Colin MacKenzie IV"]
   s.email       = ["sinisterchipmunk@gmail.com"]
   s.homepage    = "http://github.com/sinisterchipmunk/bitcoin-client"
@@ -21,7 +21,6 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
-
   s.add_development_dependency "rake",    '~> 0.9'
   s.add_development_dependency "bundler"
   s.add_development_dependency "rspec",   '~> 2.6'

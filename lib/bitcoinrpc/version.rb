@@ -1,4 +1,4 @@
-module Bitcoin
+module Bitcoinrpc
   module Version
     MAJOR = 0
     MINOR = 0

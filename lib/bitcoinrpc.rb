@@ -3,7 +3,7 @@ module Bitcoinrpc
   autoload :API,    'bitcoinrpc/api'
   autoload :Request,'bitcoinrpc/request'
   autoload :RPC,    'bitcoinrpc/rpc'
-  autoload :Errors, 'bitcoin/errors'
+  autoload :Errors, 'bitcoinrpc/errors'
   autoload :Version,'bitcoinrpc/version'
   autoload :VERSION,'bitcoinrpc/version'
   autoload :DSL,    'bitcoinrpc/dsl'

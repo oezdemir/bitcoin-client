@@ -23,7 +23,7 @@ describe Bitcoinrpc do
   
   it "DSL, extended" do
     class << self
-      include Bitcoirpcn
+      include Bitcoinrpc
       
       username $user
       password $pass

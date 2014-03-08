@@ -137,6 +137,11 @@ class Bitcoinrpc::Client
     @api.request 'gettransaction', txid
   end
 
+  #Returns details about an unspent transaction output.
+  def gettxout(txid, n, includemempool = nil)
+    @api.request 'gettxout', txid, n, includemempool  
+  end
+  
   # If +data+ is not specified, returns formatted hash data to work on:
   #
   #  :midstate => precomputed hash state after hashing the first half of the data

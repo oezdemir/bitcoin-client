@@ -141,6 +141,12 @@ class Bitcoinrpc::Client
   def gettxout(txid, n, includemempool = nil)
     @api.request 'gettxout', txid, n, includemempool  
   end
+
+  #Returns all unspent transaction outputs for given address.
+  #Requires a custom build of bitcoind (addrindex branch @ https://github.com/dexX7/bitcoin.git )
+  def listallunspent(address)
+    @api.request 'listallunspent', address
+  end
   
   # If +data+ is not specified, returns formatted hash data to work on:
   #
